@@ -1,0 +1,360 @@
+body{
+    background-color: azure;
+    margin: 0px;
+}
+
+a{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    display: flex;
+    margin: 0px;
+}
+
+.alertBox {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    border-radius: 5px;
+    background-color: rgb(183, 214, 214);
+    width: 350px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.308) 1px 1px;
+}
+
+.alertBoxHeader {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0px 0px;
+    padding: 0px 0px 0px 10px;
+    background-color: rgb(213, 252, 252);
+    border-bottom: 1px solid black;
+    height: 25px;
+}
+
+.alertBoxMain {
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px 5px 3px;
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.alertBoxFooter {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    border-radius: 0px 0px 5px 5px;
+    padding: 0px 0px 0px 5px;
+    background-color: rgb(213, 252, 252);
+    height: 25px;
+}
+
+.buttonCreated{
+    border-right: 1px solid black;
+}
+
+.footerButtonsCreated{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.headerTitle {
+    margin-top: 2px;
+}
+
+.headerButtons {
+    display: flex;
+    border-radius: 0px 4px 0px 0px;
+    background-color: aquamarine;
+    border-left: 1px solid rgb(59, 59, 59);
+}
+
+.headerButton {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 6px 0px 6px;
+}
+
+.headerButton:hover {
+    background-color: rgb(0, 248, 165);
+}
+
+#headerButtonX:hover {
+    color: white;
+    background-color: rgb(255, 82, 82);
+    border-radius: 0px 4px 0px 0px;
+}
+
+#headerButtonMin {
+    font-weight: bold;
+}
+
+.footerButtons {
+    display: flex;
+    border-radius: 0px 0px 4px 0px;
+    background-color: aquamarine;
+}
+
+.footerButton {
+    border-left: 1px solid black;
+    background-color: rgb(158, 255, 223);
+    display: flex;
+    align-items: center;
+    padding: 0px 3px 0px 3px;
+}
+
+.footerButton:hover {
+    background-color: rgb(0, 248, 165);
+}
+
+#footerButtonOK{
+    border-radius: 0px 0px 4px 0px;
+}
+
+#footerButtonOK:hover {
+    border-radius: 0px 0px 4px 0px;
+}
+
+.dF {
+    display: flex;
+}
+
+.dN {
+    display: none;
+}
+
+.alertBoxMin {
+    user-select: none;
+    position: fixed;
+    bottom: 4px;
+    left: 4px;
+    justify-content: space-between;
+    padding: 2px 0px 3px 4px;
+    border-radius: 0px 8px 0px 8px;
+    width: 130px;
+    background-color: darkcyan;
+    box-shadow: 2px 2px 4px rgba(0, 122, 122, 0.74);
+}
+
+.alertBoxMin:hover {
+    background-color: rgb(1, 121, 121);
+    color: white;
+}
+
+.alertBoxMinButtons {
+    display: flex;
+}
+
+.LiButton{
+    user-select: none;
+    border: 1px solid rgb(248, 220, 185);
+    box-shadow: 2px 2px 3px rgb(156, 216, 216);
+    border-radius: 3px;
+    background-color: rgb(255, 237, 213);
+    padding: 2px 5px 2px 5px;
+    margin: 5px 0px 0px 5px;
+    width: auto;
+    height: 20px;
+}
+
+.LiButton:hover{
+    background-color: rgb(253, 217, 169);
+    border: 1px solid rgba(138, 138, 138, 0.363);
+    transform: translate(2px, 0px)
+}
+
+.LiInput{
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(248, 219, 184);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0);
+    height: 15px;
+}
+
+.LiInpBtn{
+    display: flex;
+    align-content: center;
+    background-color: rgb(255, 237, 213);
+    border: 1px solid rgb(253, 196, 127);
+    height: 25px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 2px 2px 3px rgb(156, 216, 216);
+}
+
+.LiInp{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    margin: 0px;
+    margin-left: 8px;
+    padding: 0px;
+    
+}
+
+.LiInputBtn{
+    height: 100%;
+    background-color: rgb(255, 237, 213);
+    margin: 0px;
+    padding: 1px 4px 1px 2px;
+    border:none;
+    border-left: 1px solid rgb(253, 196, 127);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.LiInputBtn:hover{
+    background-color: rgb(248, 220, 185);
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(213, 252, 252);
+    padding: 3px 0px 3px 0px;
+    /* border-bottom: 1px solid gray; */
+}
+
+.navBarTitle{
+    margin-left: 20px;
+}
+
+.navBarMenu{
+    margin-right: 20px;
+}
+
+.display{
+    margin-top: 36px;
+    width: 100%;
+}
+
+.displayTabs{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding-left: 4px;
+    background-color: rgb(213, 252, 252);
+    border-bottom: 1px solid black;
+}
+
+.tabs{
+    display: flex;
+    background-color: azure;
+    height: 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 10px;
+    padding: 5px;
+    user-select: none;
+}
+
+
+.closeTab{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border-radius: 45%;
+    padding: 0px 4px 0px 4px;
+}
+
+.closeTab:hover{
+    background-color: rgb(253, 163, 147);
+}
+
+.tabs:hover{
+    background-color: rgb(218, 231, 231);
+}
+
+.activeTab{
+    transform: translate(0px, 1px);
+}
+
+.serviceList{
+    display: flex;
+    flex-direction: column;
+}
+
+.displayContent{
+    display: flex;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.serviceCard{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    width: 150px;
+    border: 1px solid rgb(172, 207, 207);
+    border-radius: 2px;
+    background-color: rgb(208, 235, 235);
+    user-select: none;
+}
+
+.serviceCardLabel{
+    padding: 3px 0px 3px 4px;
+}
+
+.serviceCard:hover{
+    background-color: rgb(186, 231, 231);
+}
+
+.addTab{
+    display: flex;
+    font-weight: bolder;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    border-radius: 0px 1px 1px 0px;
+}
+
+.addTab:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.tabHome{
+    max-width: 800px;
+    min-width: 500px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+.linkList{
+    display: flex;
+    flex-direction: column;
+}
+
+.linkCard{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    width: 290px;
+    border: 1px solid rgb(172, 207, 207);
+    border-radius: 2px;
+    background-color: rgb(208, 235, 235);
+    user-select: none;
+}
+
+.formCurriculo{
+    display: grid;
+    
+}
